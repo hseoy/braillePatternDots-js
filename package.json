@@ -1,0 +1,31 @@
+{
+  "name": "braillepatterndots-js",
+  "version": "1.0.3",
+  "description": "A simple library for braille pattern",
+  "main": "dist/braillePatternDots.js",
+  "typs": "dist/braillePatternDots.d.ts",
+  "repository": "https://github.com/hseoy/braillePatternDots-js.git",
+  "keywords": [
+    "braille",
+    "pattern"
+  ],
+  "author": "Yunseo Hwang <yunseo.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hseoy/braillePatternDots-js/issues"
+  },
+  "homepage": "https://github.com/hseoy/braillePatternDots-js#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "nyc mocha --reporter spec",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "dependencies": {}
+}
